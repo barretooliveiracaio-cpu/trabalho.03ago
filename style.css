@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a252f;
+    padding: 1rem 2rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+    color: white;
+    padding: 3.5rem 1.5rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    color: #1a252f;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0052d4;
+    padding-bottom: 0.5rem;
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.meta-info {
+    background-color: #eef2f7;
+    padding: 0.75rem;
+    border-left: 4px solid #0052d4;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.card ul, .card ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card li {
+    margin-bottom: 0.4rem;
+}
+
+/* Tabela Responsiva */
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #1a252f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Imagens e Fontes */
+.media-container {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.media-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.inline-media img {
+    max-width: 300px;
+}
+
+.fonte-legenda {
+    display: block;
+    font-size: 0.82rem;
+    color: #666;
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Cartões KPI e Gráficos */
+.kpi-grid {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.kpi-card {
+    flex: 1;
+    min-width: 240px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #0052d4;
+    padding: 1.2rem;
+    border-radius: 6px;
+}
+
+.kpi-num {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #0052d4;
+}
+
+.kpi-label {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.grafico-barras {
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.barra-item {
+    margin-bottom: 1.2rem;
+}
+
+.barra-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.barra-fundo {
+    background-color: #e2e8f0;
+    height: 22px;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.barra-preenchimento {
+    background: linear-gradient(90deg, #0052d4, #4364f7);
+    height: 100%;
+    border-radius: 11px;
+    transition: width 1s ease-in-out;
+}
+
+/* Layout da Campanha */
+.campanha-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.campanha-texto {
+    flex: 1;
+    min-width: 280px;
+}
